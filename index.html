@@ -4,15 +4,14 @@
     <title>Family Book</title>
 
     <link rel="stylesheet" href="style.css">
-
     <script>
         var familyName = ["Amreen", "Arsheen", "Anureet", "Rominder", "Mandeep"]
-        var familyImg = ["Amreen.jpg", "Arsheen.jpg", "Anu.jpg", "Arsheen.jpg", "Anu.jpg"]
+        var familyImg = ["/pics/Amreen.jpg", "/pics/Arsheen.jpg", "/pics/Anu.jpg", "pics/Mum.jpg", "pics/Dad.jpg"]
         var i = 0;
         function update() {
             i++;
             var numberFamily = 5
-            if (i > numberFamily) {
+            if (i >= numberFamily) {
                 i = 0;
             }
             var updatedImage = familyImg[i]
@@ -23,16 +22,19 @@
     </script>
 </head>
 
+
 <body>
+    <center>
 
-    <div>
-        <h1 class="center">My Family Book</h1>
-        <img id="mainImg" class="center"
-            src="https://www.kolberlegal.com/wp-content/uploads/2017/04/family-head-1100-768x314.jpg">
-        <h1 id="familyyName"></h1>
-        <button onclick="update()" class="center">Next</button>
+        <div>
+            <h1 class="center">My Family Book</h1>
+            <img id="mainImg" class="center"
+                src="https://www.kolberlegal.com/wp-content/uploads/2017/04/family-head-1100-768x314.jpg">
+            <h1 id="familyyName"></h1>
+            <button onclick="update()" class="center">Next</button>
 
-    </div>/
+        </div>
+    </center>
 </body>
 
 </html>
